@@ -78,12 +78,12 @@ function onClick(){
     }
 }
 
-function updateTimerField(obj){
+function updateTimerField({days, hours, minutes, seconds}){
 
-    refs.timer.days.textContent = addLeadingZero(obj.days);
-    refs.timer.hours.textContent = addLeadingZero(obj.hours);
-    refs.timer.minutes.textContent = addLeadingZero(obj.minutes);
-    refs.timer.seconds.textContent = addLeadingZero(obj.seconds);
+    refs.timer.days.textContent = addLeadingZero(days);
+    refs.timer.hours.textContent = addLeadingZero(hours);
+    refs.timer.minutes.textContent = addLeadingZero(minutes);
+    refs.timer.seconds.textContent = addLeadingZero(seconds);
     // refs.timer.days = "new way";
     // console.log(refs.timer);
 }
