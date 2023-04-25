@@ -32,7 +32,7 @@ function onClick(event) {
       });
 
     count -= 1;
-    if (count < 0){
+    if (count < 1){
       clearInterval(countId);
       // console.log(countId);
     }
